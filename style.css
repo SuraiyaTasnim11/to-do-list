@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin-left: 10px;
+}
+
+body {
+    background: url("images/background.jpeg") no-repeat center bottom fixed;
+    background-size: cover;
+}
+
+h1 {
+    font-family: "Rubik Doodle Shadow", sans-serif;
+    font-size: 70px;
+    text-align: center;
+    background-color: #d8e2dc;
+    margin: 0;
+    padding: 20px;
+    border: #000000 solid 2px;
+    width: 500px;
+    position: relative;
+    top: 5px;
+    left: 455px;
+}
+
+.container {
+    width: 1000px;
+    height: 600px;
+    margin-left: 200px;
+    padding: 5px 20px 325px;
+    border-radius: 25px;
+}
+
+img {
+    width: 80px;
+    background-color: #d8e2dc;
+}
+
+.form {
+    font-family: Sono, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #e9ecef;
+    border-radius: 40px;
+    margin: 15px;
+    padding: 5px;
+    border: #000000 solid 2px;
+}
+
+#input-box {
+    font-family: Sono, sans-serif;
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+}
+
+button {
+    font-family: Sono, sans-serif;
+    border: none;
+    outline: none;
+    padding: 20px 50px;
+    font-size: 18px;
+    background: #3b6064;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+button:hover {
+    background-color: #708d81;
+}
+button:active {
+    background-color: #708d81;
+    box-shadow: 0 5px #708d81;
+    transform: translateY(4px);
+}
+
+ul li {
+    font-family: Sono, sans-serif;
+    background: #e9ecef;
+    list-style: none;
+    cursor:pointer;
+    user-select: none;
+    padding: 12px 8px 12px 50px;
+    margin-left: -40px;
+    margin-top: 5px;
+    position: relative;
+    border: #000000 solid 2px;
+}
+
+/*Adds unchecked box in front of each list item*/
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-image: url(images/unchecked-box.png);
+    background-size: cover;
+    background-position: center;
+    top: 8px;
+    left: 8px;
+}
+
+ul li.checked {
+    text-decoration: line-through;
+}
+
+/*Adds checked box when an item is clicked*/
+ul li.checked::before {
+    background-image: url(images/checkbox.png);
+}
+
+/*Style for "x" button*/
+ul li span {
+    position: absolute;
+    right: 0px;
+    top: 3px;
+    width: 40px;
+    height: 40px;
+    font-size: 50px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #e9ecef;
+}
+
+ul li span:hover {
+    color: #da627d;
+}
