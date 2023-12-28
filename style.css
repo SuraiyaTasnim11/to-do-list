@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&family=Sono&display=swap');
+
 * {
     box-sizing: border-box;
     margin-left: 10px;
 }
 
 body {
-    background: url("images/background.jpeg") no-repeat center bottom fixed;
+    background: url("images/workspace.jpeg") no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -12,9 +14,9 @@ h1 {
     font-family: "Rubik Doodle Shadow", sans-serif;
     font-size: 70px;
     text-align: center;
-    background-color: #d8e2dc;
+    background: linear-gradient(135deg, #d8e2dc, #b0c4b1);
     margin: 0;
-    padding: 20px;
+    padding: 5px;
     border: #000000 solid 2px;
     width: 500px;
     position: relative;
@@ -32,7 +34,7 @@ h1 {
 
 img {
     width: 80px;
-    background-color: #d8e2dc;
+    background: transparent;
 }
 
 .form {
@@ -56,7 +58,7 @@ img {
     padding: 10px;
 }
 
-button {
+.addButton {
     font-family: Sono, sans-serif;
     border: none;
     outline: none;
@@ -68,13 +70,14 @@ button {
     border-radius: 40px;
 }
 
-button:hover {
-    background-color: #708d81;
-}
-button:active {
+.addButton:active {
     background-color: #708d81;
     box-shadow: 0 5px #708d81;
     transform: translateY(4px);
+}
+
+button:hover {
+    background-color: #708d81;
 }
 
 ul li {
@@ -90,7 +93,7 @@ ul li {
     border: #000000 solid 2px;
 }
 
-/*Adds unchecked box in front of each list item*/
+/*Adds an unchecked box in front of each list item*/
 ul li::before {
     content: '';
     position: absolute;
@@ -107,7 +110,7 @@ ul li.checked {
     text-decoration: line-through;
 }
 
-/*Adds checked box when an item is clicked*/
+/*Adds a checked box when an item is clicked*/
 ul li.checked::before {
     background-image: url(images/checkbox.png);
 }
@@ -127,4 +130,43 @@ ul li span {
 
 ul li span:hover {
     color: #da627d;
+}
+
+/* Dropdown for changing background image*/
+.dropdown {
+    position: relative;
+    bottom: 5px;
+    font-family: Sono, sans-serif;
+    font-size: 16px;
+    margin: 10px;
+}
+
+.dropButton {
+    font-family: Sono, sans-serif;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    background: #3b6064;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 135px;
+    background-color: #e9ecef;
+    max-width: 186px;
+    padding: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+.dropdown-content a:hover {
+    background-color: #d8e2dc;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }

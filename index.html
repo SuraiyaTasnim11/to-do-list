@@ -2,19 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do</title>
     <link href="style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&family=Sono&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <h1>To-Do <img src="images/icon.png" alt="to-do checklist"></h1>
+    <h1>To-Do <img src="images/icon.png" alt="to-do checklist">
+        <div class="dropdown">
+            <button class="dropButton">Change background</button>
+                <div class="dropdown-content">
+                <a onclick="workspace()">Workspace</a><br><hr>
+                <a onclick="mountainLandscape()">Mountain Landscape</a><br><hr>
+                <a onclick="sunset()">Sunset</a><br><hr>
+                <a onclick="milkyWay()">Milky Way</a><br><hr>
+                <a onclick="coffeeBeans()">Coffee Beans</a>
+                </div>
+        </div>
+    </h1>
 
     <div id="home" class="container">
         <form class="column form">
             <input id="input-box" type="text" placeholder="New task" required>
-            <button onclick="addTask(event)">Add</button>
+            <button class="addButton" onclick="addTask(event)">Add</button>
         </form>
 
         <!--Tasks entered into the form will be inserted under ul-->

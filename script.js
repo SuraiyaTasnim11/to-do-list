@@ -1,5 +1,6 @@
 const inputBox = document.getElementById("input-box");
 const listContainer = document.getElementById("list-container");
+const body = document.querySelector("body");
 
 // Adds a task to the list when the "Add" button is clicked. Also adds a delete button next to each item. 
 function addTask(event) {
@@ -22,7 +23,7 @@ function addTask(event) {
     saveData();
 }
 
-// Crosses out item when the item is clicked. Removes item from list when the corresponding delete button is clicked.
+// Crosses out an item when it is clicked, and removes an item from the list when the respective delete button is clicked.
 listContainer.addEventListener("click", (event) => {
     if(event.target.tagName === "LI") {
         event.target.classList.toggle("checked");
@@ -43,3 +44,24 @@ function showList() {
     listContainer.innerHTML = localStorage.getItem("data");
 }
 showList();
+
+// Changes the background image
+function workspace() {
+    body.style.backgroundImage = "url('images/workspace.jpeg')";
+}
+
+function mountainLandscape() {
+    body.style.backgroundImage = "url('images/mountain-landscape.jpeg')";
+}
+
+function sunset() {
+    body.style.backgroundImage = "url('images/sunset.jpeg')";
+}
+
+function milkyWay() {
+    body.style.backgroundImage = "url('images/milky-way.jpeg')";
+}
+
+function coffeeBeans() {
+    body.style.backgroundImage = "url('images/coffee-beans.jpeg')";
+}
