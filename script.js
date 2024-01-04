@@ -1,6 +1,7 @@
 const inputBox = document.getElementById("input-box");
 const listContainer = document.getElementById("list-container");
 const body = document.querySelector("body");
+const heading = document.querySelector("h1");
 
 // Adds a task to the list when the "Add" button is clicked. Also adds a delete button next to each item. 
 function addTask(event) {
@@ -48,20 +49,25 @@ showList();
 // Changes the background image
 function workspace() {
     body.style.backgroundImage = "url('images/workspace.jpeg')";
+    heading.style.color = "#000000";
 }
 
-function mountainLandscape() {
-    body.style.backgroundImage = "url('images/mountain-landscape.jpeg')";
+function mountain() {
+    body.style.backgroundImage = "url('images/mountain.jpeg')";
+    heading.style.color = "#ffffff";
 }
 
-function sunset() {
-    body.style.backgroundImage = "url('images/sunset.jpeg')";
+function sunrise() {
+    body.style.backgroundImage = "url('images/sunrise.jpeg')";
+    heading.style.color = "#000000";
 }
 
-function milkyWay() {
-    body.style.backgroundImage = "url('images/milky-way.jpeg')";
+function forest() {
+    body.style.backgroundImage = "url('images/forest.jpeg')";
+    heading.style.color = "#ffffff";
 }
 
-function coffeeBeans() {
-    body.style.backgroundImage = "url('images/coffee-beans.jpeg')";
+function coffee() {
+    body.style.backgroundImage = "url('images/coffee.jpeg')";
+    heading.style.color = "#ffffff";
 }
