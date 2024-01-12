@@ -2,7 +2,6 @@
 
 * {
     box-sizing: border-box;
-    margin-left: 10px;
 }
 
 body {
@@ -12,25 +11,23 @@ body {
 
 h1 {
     font-family: "Rubik Doodle Shadow", sans-serif;
-    font-size: 70px;
+    font-size: 5.3vw;
     text-align: center;
     margin: 0;
-    padding: 5px;
-    width: 500px;
+    padding: 0.4vw;
+    width: 38.16vw;
     position: relative;
-    left: 435px;
+    left: 32vw;
 }
 
 .container {
-    width: 1000px;
-    height: 600px;
-    margin-left: 200px;
-    padding: 5px 20px 325px;
-    border-radius: 25px;
+    width: 75%;
+    height: 70vw;
+    margin-left: 12.5vw;
 }
 
 img {
-    width: 80px;
+    max-width: 18%;
     background: transparent;
 }
 
@@ -40,10 +37,10 @@ img {
     align-items: center;
     justify-content: space-between;
     background: #e9ecef;
-    border-radius: 40px;
-    margin: 15px;
-    padding: 5px;
-    border: #000000 solid 2px;
+    border-radius: 5vw;
+    margin: 1.15vw;
+    padding: 0.5vw;
+    border: #000000 solid 0.2vw;
 }
 
 #input-box {
@@ -52,24 +49,24 @@ img {
     border: none;
     outline: none;
     background: transparent;
-    padding: 10px;
+    padding: 0.77vw;
+    width: 70%;
 }
 
 .addButton {
     font-family: Sono, sans-serif;
     border: none;
-    outline: none;
-    padding: 20px 50px;
-    font-size: 18px;
+    padding: 1.5vw 3vw;
+    font-size: 1.5vw;
     background: #3b6064;
     color: #ffffff;
     cursor: pointer;
-    border-radius: 40px;
+    border-radius: 3vw;
 }
 
 .addButton:active {
     background-color: #708d81;
-    box-shadow: 0 5px #708d81;
+    box-shadow: 0 0.4vw #708d81;
     transform: translateY(4px);
 }
 
@@ -77,30 +74,36 @@ button:hover {
     background-color: #708d81;
 }
 
+ul {
+    padding-inline-start: 0;
+    width: 90%;
+    margin-left: 5.5vw;
+}
+
 ul li {
     font-family: Sono, sans-serif;
     background: #e9ecef;
     list-style: none;
-    cursor:pointer;
+    cursor: pointer;
     user-select: none;
-    padding: 12px 8px 12px 50px;
-    margin-left: -40px;
-    margin-top: 5px;
+    padding: 0.9vw 0.6vw 0.9vw 3.8vw;
+    margin-left: -3.5vw;
+    margin-top: 0.4vw;
     position: relative;
-    border: #000000 solid 2px;
+    border: #000000 solid 0.2vw;
 }
 
 /*Adds an unchecked box in front of each list item*/
 ul li::before {
     content: '';
     position: absolute;
-    height: 30px;
-    width: 30px;
+    height: 2.3vw;
+    width: 2.3vw;
     background-image: url(images/unchecked-box.png);
     background-size: cover;
     background-position: center;
-    top: 8px;
-    left: 8px;
+    top: 0.6vw;
+    left: 0.6vw;
 }
 
 ul li.checked {
@@ -115,12 +118,12 @@ ul li.checked::before {
 /*Style for "x" button*/
 ul li span {
     position: absolute;
-    right: 0px;
-    top: 3px;
-    width: 40px;
-    height: 40px;
-    font-size: 50px;
-    line-height: 30px;
+    right: 0;
+    top: 0.2vw;
+    width: 3vw;
+    height: 2vw;
+    font-size: 4vw;
+    line-height: 2.5vw;
     text-align: center;
     background-color: #e9ecef;
 }
@@ -132,19 +135,19 @@ ul li span:hover {
 /* Dropdown for changing background image*/
 .dropdown {
     font-family: Sono, sans-serif;
-    font-size: 16px;
-    margin: 10px;
+    font-size: 1.22vw;
+    margin: 0.76vw;
     z-index: 1;
     position: relative;
-    top: 20px;
+    top: 1.5vw;
 }
 
 .dropButton {
     font-family: Sono, sans-serif;
     border: none;
     outline: none;
-    padding: 10px;
-    font-size: 16px;
+    padding: 0.76vw;
+    font-size: 1.22vw;
     background: #3b6064;
     color: #ffffff;
     cursor: pointer;
@@ -153,10 +156,10 @@ ul li span:hover {
 .dropdown-content {
     display: none;
     position: absolute;
-    left: 1px;
+    left: 0.07vw;
     background-color: #e9ecef;
-    width: 186px;
-    padding: 10px;
+    width: 14.2vw;
+    padding: 0.76vw;
     cursor: pointer;
     text-align: center;
 }
